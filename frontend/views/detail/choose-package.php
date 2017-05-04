@@ -8,10 +8,6 @@ $params = \Yii::$app->params;
 ?>
 
 <header>
-    <a href="javascript:history.go(-1);" class="return">
-        <img class=" img-responsive"
-             src="<?= $params['frontend_source'] ?>/img/return.svg"/>
-    </a>
     选择套餐
     <div class="menu detail" kk-menu="#menu">
         <img class="img-responsive"
@@ -83,10 +79,12 @@ $params = \Yii::$app->params;
          src="<?= $params['frontend_source'] ?>/img/classify.svg"/></span>
             联系人信息
         </div>
-        <input type="text" name="name" ng-model="buy.user_info.name" placeholder="姓名"/>
-        <input type="number" name="phone" ng-model="buy.user_info.phone" ng-model="message" placeholder="手机号码"/>
+        <div class="input-border">
+            <input type="text" name="name" ng-model="buy.user_info.name" placeholder="姓名"/></div>
+        <div class="input-border"><input type="number" name="phone" ng-model="buy.user_info.phone" ng-model="message"
+                                         placeholder="手机号码"/></div>
 
-        <div class="auth-code">
+        <div class="auth-code input-border">
             <input name="captcha " ng-model="buy.user_info.captcha" placeholder="验证码"/>
 
             <div class="auth-code-1" kk-sms="{{buy.user_info.phone}}" sms-type="2" message="factory.message">发送验证码</div>
@@ -116,8 +114,8 @@ $params = \Yii::$app->params;
             </li>
         </ul>
     </div>
+    <div class="blank1"></div>
 </div>
-
 <footer>
     <div class="price"><p>￥<span ng-bind="totalPrice"></span></p></div>
     <div class="buy" kk-tap="goToPayment()">立即付款</div>

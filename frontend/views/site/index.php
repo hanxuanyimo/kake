@@ -61,6 +61,7 @@ $params = \Yii::$app->params;
     </div>
 <?php endif; ?>
 
+<<<<<<< Updated upstream
 <?php if (!empty($banner)): ?>
     <div class="carousel" id="carousel-scroller-activity" kk-scroll>
         <div class="carousel-scroller activity">
@@ -70,6 +71,22 @@ $params = \Yii::$app->params;
                          src="<?= current($item['preview_url']) ?>"/></a>
             <?php endforeach; ?>
         </div>
+=======
+<div class="carousel" id="carousel-scroller-activity" kk-scroll>
+    <div class="carousel-scroller activity">
+        <a href="">
+            <img class="img-responsive"
+                 src="<?= $params['frontend_source'] ?>/img/bananer.jpg"/></a>
+        <a href="">
+            <img class="img-responsive"
+                 src="<?= $params['frontend_source'] ?>/img/bananer_1.png"/></a>
+        <a href="">
+            <img class="img-responsive"
+                 src="<?= $params['frontend_source'] ?>/img/bananer.jpg"/></a>
+        <a href="">
+            <img class="img-responsive"
+                 src="<?= $params['frontend_source'] ?>/img/bananer_1.png"/></a>
+>>>>>>> Stashed changes
     </div>
 <?php endif; ?>
 
