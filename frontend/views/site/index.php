@@ -60,7 +60,10 @@ $params = \Yii::$app->params;
         </div>
     </div>
 <?php endif; ?>
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 <?php if (!empty($banner)): ?>
     <div class="carousel" id="carousel-scroller-activity" kk-scroll>
         <div class="carousel-scroller activity">
@@ -72,7 +75,6 @@ $params = \Yii::$app->params;
         </div>
     </div>
 <?php endif; ?>
-
 <div class="recommend">
     <?php if (!empty($standardList)): ?>
         <p><span class="recommend2">精品推荐</span></p>
