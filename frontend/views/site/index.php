@@ -61,6 +61,11 @@ $params = \Yii::$app->params;
     </div>
 <?php endif; ?>
 
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
 <?php if (!empty($banner)): ?>
     <div class="carousel" id="carousel-scroller-activity" kk-scroll>
         <div class="carousel-scroller activity">
